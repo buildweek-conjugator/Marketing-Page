@@ -2,7 +2,6 @@
   padding: 10px 10%;
   font-size: 1.8rem;
   border-radius: 10px;
-  border: 1px solid grey;
 }
 .button-gradient {
   background-image: linear-gradient(to right, #fcf4da 0%, #F2AC29 51%, #ef0d0d 100%);
@@ -222,6 +221,7 @@ header nav a {
   }
   header h1 {
     font-size: 3 rem;
+    padding-top: 10px;
   }
   header nav {
     justify-content: center;
@@ -256,7 +256,7 @@ header nav a {
   text-shadow: black;
   padding-right: 2%;
 }
-@media (max-width:500px) {
+@media (max-width:800px) {
   .footer-content {
     padding: 20px 0;
     width: 100%;
@@ -284,7 +284,7 @@ header nav a {
   align-content: flex-end;
   border-bottom: 1px solid black;
   background-image: url(../image/top-banner.jpg);
-  background-color: #fafafa;
+  background-color: #f6f6ff;
   background-size: 95%;
   background-position: top left;
   background-repeat: no-repeat;
@@ -308,7 +308,6 @@ header nav a {
   padding: 10px 10%;
   font-size: 1.8rem;
   border-radius: 10px;
-  border: 1px solid grey;
   background-image: linear-gradient(to right, #fcf4da 0%, #F2AC29 51%, #ef0d0d 100%);
 }
 .index-page-container .top-banner .top-text button a {
@@ -325,8 +324,15 @@ header nav a {
   text-align: center;
   border-bottom: 1px solid black;
 }
+.index-page-container .middle-content a {
+  text-decoration: none;
+}
 .index-page-container .middle-content h2 {
   padding-top: 20px;
+  color: black;
+}
+.index-page-container .middle-content h2:hover {
+  color: #BF0A0A;
 }
 .index-page-container .middle-content .middle-content-reason {
   display: flex;
@@ -356,74 +362,109 @@ header nav a {
   padding: 10px 10%;
   font-size: 1.8rem;
   border-radius: 10px;
-  border: 1px solid grey;
   background-image: linear-gradient(to right, #fcf4da 0%, #F2AC29 51%, #ef0d0d 100%);
 }
 .index-page-container .bottom-banner button a {
   text-decoration: none;
   color: black;
 }
-.team-page-container {
+.index-page-container .bottom-banner button:hover {
+  background-image: linear-gradient(to right, #ef0d0d 0%, #F2AC29 51%, #fcf4da 100%);
+  background-position: right center;
+}
+.about-page-container {
   margin: 0px auto;
   width: 100%;
 }
-.team-page-container .top-banner {
+.about-page-container .top-banner {
   display: flex;
 }
-.team-page-container .top-banner img {
+.about-page-container .top-banner img {
   width: 50%;
   padding: 2%;
 }
-.team-page-container .top-banner .team-msg {
+.about-page-container .top-banner .team-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
   padding: 5%;
 }
-.team-page-container .middle-content {
+.about-page-container .top-banner .team-msg .quote {
+  font-size: 3rem;
+  font-family: "Lobster";
+  color: #5e0505;
+}
+.about-page-container .top-banner .team-msg .quote:hover {
+  color: #BF0A0A;
+}
+.about-page-container .top-banner .team-msg .describe {
+  font-family: "Cabin";
+  font-size: 2rem;
+  color: black;
+}
+.about-page-container .top-banner .team-msg a {
+  text-decoration: none;
+}
+.about-page-container .top-banner .team-msg a .describe:hover {
+  color: #BF0A0A;
+}
+.middle-content {
   margin: 0px auto;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.team-page-container .middle-content h1 {
+.middle-content h1 {
   text-align: center;
   padding: 20px;
 }
-.team-page-container .middle-content .team-member-info {
-  display: flex;
-  flex-direction: column;
-}
-.team-page-container .middle-content .team-member-info .team-row-one {
-  display: flex;
-  align-content: center;
-}
-.team-page-container .middle-content .team-member-info .team-row-two {
+.middle-content .team-member-info {
   display: flex;
 }
-.team-page-container .middle-content .team-member-info .person {
+.middle-content .team-member-info .person {
   padding: 20px;
   margin: 20px 5%;
-  border: 1px solid #BF0A0A;
+  border: 3px dotted #BF0A0A;
   border-radius: 20px;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.team-page-container .middle-content .team-member-info .person img {
+.middle-content .team-member-info .person img {
   position: relative;
   width: 100px;
   height: 100px;
   border-radius: 10px;
   overflow: hidden;
 }
-.team-page-container .middle-content .team-member-info .person h2 {
+.middle-content .team-member-info .person h2 {
   font-size: 1.6rem;
   margin-top: 10px;
 }
+.middle-content .team-member-info .person a img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
 @media (max-width:800px) {
-  .index-page-container .top-banner h1 #team {
+  .index-page-container .top-banner {
+    background-image: none;
+  }
+  .index-page-container .top-banner img {
     visibility: visible;
-    font-size: 3rem;
+    width: 75%;
+  }
+  .index-page-container .top-banner .top-text {
+    margin-left: 0px;
+  }
+  .index-page-container .top-banner .top-text h1 {
+    font-size: 3.2rem;
+  }
+  .index-page-container .top-banner .top-text h2 {
+    font-size: 2.6rem;
   }
 }
 @media (max-width:500px) {
@@ -431,6 +472,7 @@ header nav a {
     flex-direction: column;
     background-image: none;
     justify-content: center;
+    border-bottom: 2px dashed #BF800B;
   }
   .index-page-container .top-banner img {
     visibility: visible;
@@ -450,6 +492,9 @@ header nav a {
     font-size: 1.6rem;
     word-wrap: normal;
   }
+  .index-page-container .top-banner .top-text button {
+    margin: 5px 0;
+  }
   .index-page-container .middle-content {
     margin: 0px;
   }
@@ -463,18 +508,31 @@ header nav a {
     margin: 2%;
   }
 }
+@media (max-width:800px) {
+  .about-page-container .top-banner img {
+    margin: 20px 0;
+  }
+  .about-page-container .middle-content .team-member-info {
+    flex-flow: row wrap;
+  }
+  .about-page-container .middle-content .team-member-info .person {
+    padding: 10px;
+    margin: 10 px;
+    width: 40%;
+  }
+}
 @media (max-width:500px) {
-  .team-page-container .top-banner {
+  .about-page-container .top-banner {
     flex-direction: column;
+    border-bottom: 2px dashed #BF800B;
   }
-  .team-page-container .top-banner img {
+  .about-page-container .top-banner img {
     width: 100%;
   }
-  .team-page-container .top-banner .team-msg {
+  .about-page-container .top-banner .team-msg {
     width: 100%;
   }
-  .team-page-container .team-row-one {
-    flex-flow: wrap;
-    align-items: content;
+  .about-page-container .middle-content .team-member-info {
+    flex-direction: row;
   }
 }

@@ -11,8 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin|Russo+One&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="http://example.com/favicon.ico" />  <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -29,62 +29,68 @@
         </nav>
     </header>
 
-<div class = "team-page-container">
+<div class = "about-page-container">
 <section class = "top-section"> 
         <div class= "top-banner">
             <img src ="image/the-team.jpg" alt="Teamwork Picture">
             <div class = "team-msg">
-            <p>"Great things in business are never done by one person. They're done by a team of people.</p>
-            <p>by Steve Jobs</p>
+            <p class="quote">"Great things in business are never done by one person. They're done by a team of people."</p>
+            <p class="quote">by Steve Jobs</p>
             <br>
-            <p>Conjugator is brought to you by a team dedicated to your success in Spanish learning.</p>
+            <p class="describe">Conjugator is brought to you by a team dedicated to your success in Spanish learning.</p>
             <br>
-            <p>Meet our team below.</p>
+            <a href ="#the-team"><p class="describe">Meet the team below.</p></a>
             </div>
         </div>
 </section>
 
-<section class = "middle-content">
-    <h1>Our Team</h1>
+<section class = "middle-content" id = "the-team">
+    <h1>The Team</h1>
      <div class="team-member-info">
-        <div class="team-row-one">
             <div class ="person">
-                <img src="image/lily-picture.jpg" alt="Picture of">
+                <img src="image/lily-picture.jpg" alt="Picture of Lily">
                 <h2>Lily Zhou</h2>
                 <p>Front-End Developer</p>
-                <a href="#" class="fa fa-github"></a>
+                <div class="icons">
+                    <a href="https://github.com/lilyhoratio" ><img class = "github-icon" src="image/GitHub-Mark-32px.png"></a>                </div>
             </div>
 
             <div class ="person">
-                    <img src="image/chris-picture.jpg" alt="Picture of">
+                    <img src="image/chris-picture.jpg" alt="Picture of Chris">
                     <h2>Chris Delfaus</h2>
                     <p>Front-End Developer</p>
-                    <a href="#" class="fa fa-github"></a>
-            </div>
+                    <div class="icons">
+                        <a href="https://github.com/ChrisDelf" ><img class = "github-icon" src="image/GitHub-Mark-32px.png"></a>
+                    </div>
+                </div>
         
             <div class ="person">
-                <img src="image/karen-picture.jpg" alt="Picture of">
+                <img src="image/karen-picture.jpg" alt="Picture of Karen">
                 <h2>Karen Li</h2>
                 <p>UI Developer</p>
-                <a href="#" class="fa fa-github"></a>
+                <div class="icons">
+                    <a href="https://github.com/karenjli" ><img class = "github-icon" src="image/GitHub-Mark-32px.png"></a>
+                </div>
             </div>
 
             <div class ="person">
-                    <img src="image/george-picture.jpg" alt="Picture of">
+                    <img src="image/george-picture.jpg" alt="Picture of George">
                     <h2>George Kando</h2>
                     <p>Back-End Developer</p>
-                    <a href="#" class="fa fa-github"></a>
-            </div>
+                    <div class="icons">
+                        <a href="https://github.com/gkando" ><img class = "github-icon" src="image/GitHub-Mark-32px.png"></a>                    </div>
+                </div>
         </div>
-    </div>
+    </section>
 </div>
+
 
 <footer>
         <div class="footer-content">
             <h1>Conjugator</h1>
              <nav>
-                <a href = "#">Home</a>
-                <a href = "#">Team</a>
+                <a href = "index.html">Home</a>
+                <a href = "about.html">About Us</a>
                 <a href = "#">Sign In</a>
              </nav>
         </div>
