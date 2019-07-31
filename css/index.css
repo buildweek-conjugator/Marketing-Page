@@ -284,7 +284,7 @@ header nav a {
   align-content: flex-end;
   border-bottom: 1px solid black;
   background-image: url(../image/top-banner.jpg);
-  background-color: #fafafa;
+  background-color: #f6f6ff;
   background-size: 95%;
   background-position: top left;
   background-repeat: no-repeat;
@@ -331,6 +331,9 @@ header nav a {
   padding-top: 20px;
   color: black;
 }
+.index-page-container .middle-content h2:hover {
+  color: #BF0A0A;
+}
 .index-page-container .middle-content .middle-content-reason {
   display: flex;
   justify-content: space-between;
@@ -364,6 +367,10 @@ header nav a {
 .index-page-container .bottom-banner button a {
   text-decoration: none;
   color: black;
+}
+.index-page-container .bottom-banner button:hover {
+  background-image: linear-gradient(to right, #ef0d0d 0%, #F2AC29 51%, #fcf4da 100%);
+  background-position: right center;
 }
 .about-page-container {
   margin: 0px auto;
@@ -437,18 +444,27 @@ header nav a {
   font-size: 1.6rem;
   margin-top: 10px;
 }
-.middle-content .team-member-info .person .icons {
-  display: flex;
-}
 .middle-content .team-member-info .person a img {
   width: 40px;
   height: 40px;
   margin: 0 10px;
 }
 @media (max-width:800px) {
-  .index-page-container .top-banner h1 #team {
+  .index-page-container .top-banner {
+    background-image: none;
+  }
+  .index-page-container .top-banner img {
     visibility: visible;
-    font-size: 3rem;
+    width: 75%;
+  }
+  .index-page-container .top-banner .top-text {
+    margin-left: 0px;
+  }
+  .index-page-container .top-banner .top-text h1 {
+    font-size: 3.2rem;
+  }
+  .index-page-container .top-banner .top-text h2 {
+    font-size: 2.6rem;
   }
 }
 @media (max-width:500px) {
@@ -493,6 +509,9 @@ header nav a {
   }
 }
 @media (max-width:800px) {
+  .about-page-container .top-banner img {
+    margin: 20px 0;
+  }
   .about-page-container .middle-content .team-member-info {
     flex-flow: row wrap;
   }
