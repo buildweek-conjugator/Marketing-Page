@@ -304,19 +304,20 @@ header nav a {
   margin: 30px auto;
   font-size: 2.4rem;
 }
-.index-page-container .top-banner .top-text button {
+.index-page-container .top-banner .top-text a {
+  text-decoration: none;
+  color: black;
+}
+.index-page-container .top-banner .top-text a button {
   padding: 10px 10%;
   font-size: 1.8rem;
   border-radius: 10px;
   background-image: linear-gradient(to right, #fcf4da 0%, #F2AC29 51%, #ef0d0d 100%);
 }
-.index-page-container .top-banner .top-text button a {
-  text-decoration: none;
-  color: black;
-}
-.index-page-container .top-banner .top-text button:hover {
+.index-page-container .top-banner .top-text a button:hover {
   background-image: linear-gradient(to right, #ef0d0d 0%, #F2AC29 51%, #fcf4da 100%);
   background-position: right center;
+  cursor: pointer;
 }
 .index-page-container .middle-content {
   width: 100%;
