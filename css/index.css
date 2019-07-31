@@ -1,3 +1,26 @@
+.button-style-desktop {
+  padding: 10px 10%;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.button-gradient {
+  background-image: linear-gradient(to right, #fcf4da 0%, #F2AC29 51%, #ef0d0d 100%);
+}
+.button-hover {
+  background-image: linear-gradient(to right, #ef0d0d 0%, #F2AC29 51%, #fcf4da 100%);
+  background-position: right center;
+}
+.nav-text {
+  margin: 10px 3%;
+  padding-right: 10%;
+  white-space: nowrap;
+  font-size: 20px;
+  font-family: "Cabin";
+  text-decoration: none;
+  color: #BF0A0A;
+  text-shadow: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,14 +157,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lalezar', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Russo One';
 }
 h1 {
   font-size: 4rem;
@@ -168,33 +191,136 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header nav {
-  padding: 30px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
   background-color: #F2C84B;
+  padding: 20px;
+}
+header nav {
+  display: flex;
+  padding-right: 3%;
+}
+header nav a {
+  margin: 10px 3%;
+  padding-right: 10%;
+  white-space: nowrap;
+  font-size: 20px;
+  font-family: "Cabin";
+  text-decoration: none;
+  color: #BF0A0A;
+  text-shadow: black;
+}
+@media (max-width:500px) {
+  header {
+    padding: 0px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  header h1 {
+    font-size: 3 rem;
+  }
+  header nav {
+    justify-content: center;
+    padding: 0px;
+    padding-left: 30px;
+    margin: 0px;
+    margin-top: 10px;
+  }
 }
 .footer-content {
   padding: 30px;
   background-color: #F2C84B;
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-content h1 {
+  width: 40%;
+}
+.footer-content nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+.footer-content nav a {
+  margin: 10px 3%;
+  padding-right: 10%;
+  white-space: nowrap;
+  font-size: 20px;
+  font-family: "Cabin";
+  text-decoration: none;
+  color: #BF0A0A;
+  text-shadow: black;
+  padding-right: 2%;
+}
+@media (max-width:500px) {
+  .footer-content {
+    padding: 20px 0;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content nav {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-content h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px 0;
+  }
 }
 .index-page-container {
   margin: 0px auto;
-  width: 880px;
+  width: 100%;
 }
 .index-page-container .top-banner {
   display: flex;
-  justify-content: center;
-  align-content: space-between;
+  justify-content: flex-end;
+  align-content: flex-end;
   border-bottom: 1px solid black;
+  background-image: url(../image/top-banner.jpg);
+  background-color: #fafafa;
+  background-size: 95%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 .index-page-container .top-banner img {
-  width: 50%;
-  padding: 20px;
+  visibility: hidden;
+  width: 3%;
 }
 .index-page-container .top-banner .top-text {
-  width: 50%;
-  padding: 20px;
+  width: 28%;
+  margin: 30px;
+  padding: 100px 20px;
+  border-radius: 10px;
+}
+.index-page-container .top-banner .top-text h2 {
+  margin: 30px auto;
+  font-size: 2.4rem;
+}
+.index-page-container .top-banner .top-text button {
+  padding: 10px 10%;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+  background-image: linear-gradient(to right, #fcf4da 0%, #F2AC29 51%, #ef0d0d 100%);
+}
+.index-page-container .top-banner .top-text button a {
+  text-decoration: none;
+  color: black;
+}
+.index-page-container .top-banner .top-text button:hover {
+  background-image: linear-gradient(to right, #ef0d0d 0%, #F2AC29 51%, #fcf4da 100%);
+  background-position: right center;
 }
 .index-page-container .middle-content {
+  width: 100%;
   padding: 20px auto;
   text-align: center;
   border-bottom: 1px solid black;
@@ -220,8 +346,135 @@ header nav {
 .index-page-container .bottom-banner {
   text-align: center;
   margin: 10px 0;
+  margin-bottom: 50px;
 }
 .index-page-container .bottom-banner h2 {
-  margin: 30px auto;
+  margin: 10px auto;
   line-height: 1.8;
+}
+.index-page-container .bottom-banner button {
+  padding: 10px 10%;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+  background-image: linear-gradient(to right, #fcf4da 0%, #F2AC29 51%, #ef0d0d 100%);
+}
+.index-page-container .bottom-banner button a {
+  text-decoration: none;
+  color: black;
+}
+.team-page-container {
+  margin: 0px auto;
+  width: 100%;
+}
+.team-page-container .top-banner {
+  display: flex;
+}
+.team-page-container .top-banner img {
+  width: 50%;
+  padding: 2%;
+}
+.team-page-container .top-banner .team-msg {
+  width: 50%;
+  padding: 5%;
+}
+.team-page-container .middle-content {
+  margin: 0px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.team-page-container .middle-content h1 {
+  text-align: center;
+  padding: 20px;
+}
+.team-page-container .middle-content .team-member-info {
+  display: flex;
+  flex-direction: column;
+}
+.team-page-container .middle-content .team-member-info .team-row-one {
+  display: flex;
+  align-content: center;
+}
+.team-page-container .middle-content .team-member-info .team-row-two {
+  display: flex;
+}
+.team-page-container .middle-content .team-member-info .person {
+  padding: 20px;
+  margin: 20px 5%;
+  border: 1px solid #BF0A0A;
+  border-radius: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.team-page-container .middle-content .team-member-info .person img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.team-page-container .middle-content .team-member-info .person h2 {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+@media (max-width:800px) {
+  .index-page-container .top-banner h1 #team {
+    visibility: visible;
+    font-size: 3rem;
+  }
+}
+@media (max-width:500px) {
+  .index-page-container .top-banner {
+    flex-direction: column;
+    background-image: none;
+    justify-content: center;
+  }
+  .index-page-container .top-banner img {
+    visibility: visible;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .index-page-container .top-banner .top-text {
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+  }
+  .index-page-container .top-banner .top-text h1 {
+    font-size: 3rem;
+  }
+  .index-page-container .top-banner .top-text h2 {
+    font-size: 1.6rem;
+    word-wrap: normal;
+  }
+  .index-page-container .middle-content {
+    margin: 0px;
+  }
+  .index-page-container .middle-content .middle-content-reason {
+    flex-direction: column;
+  }
+  .index-page-container .bottom-banner {
+    margin: 1%;
+  }
+  .index-page-container .bottom-banner button {
+    margin: 2%;
+  }
+}
+@media (max-width:500px) {
+  .team-page-container .top-banner {
+    flex-direction: column;
+  }
+  .team-page-container .top-banner img {
+    width: 100%;
+  }
+  .team-page-container .top-banner .team-msg {
+    width: 100%;
+  }
+  .team-page-container .team-row-one {
+    flex-flow: wrap;
+    align-items: content;
+  }
 }
