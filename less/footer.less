@@ -1,4 +1,43 @@
 .footer-content {
     padding: 30px;
     background-color: @primary-color;
+    display: flex;
+    justify-content: flex-start;
+
+    h1{
+        width: 40%;
+    }
+    nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+
+    a {
+        .nav-text;
+        padding-right: 2%;
+    }
+    }
+}
+
+@media @mobile {
+    .footer-content {
+        padding: 20px 0;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        nav {
+            width: 100%;
+            //margin-left: 15px;
+            justify-content: center;
+        }
+          
+        h1 {
+           text-align: center;
+           font-size: 3rem;
+           padding: 10px 0;
+        }
+
+    }
 }
