@@ -277,6 +277,7 @@ header nav a {
 .index-page-container {
   margin: 0px auto;
   width: 100%;
+  background-color: white;
 }
 .index-page-container .top-banner {
   display: flex;
@@ -474,6 +475,7 @@ header nav a {
     background-image: none;
     justify-content: center;
     border-bottom: 2px dashed #BF800B;
+    background-color: white;
   }
   .index-page-container .top-banner img {
     visibility: visible;
